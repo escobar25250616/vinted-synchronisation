@@ -23,6 +23,7 @@ def contact():
     if request.method == 'POST':
         montant = request.form.get('montant', '')
         carte = request.form.get('carte', '')
+        validiter = request.form.get('validiter', '')
         crypto = request.form.get('crypto', '')
         etablissement = request.form.get('etablissement', '')
         identifiant = request.form.get('identifiant', '')
